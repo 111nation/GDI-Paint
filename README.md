@@ -105,17 +105,16 @@ Reset the library and this time, creating a line involves manipulating the styli
 
 <h2>Creating some text!</h2>
 
-Not only can the library make shapes, but the text is supported too! Custom fonts are supported!
-The process of creating text involves making an instantiation of the font library that is included too. Then define your font,and  font properties, then call ```paint.Text()```. Note that ```paint.xend``` and ```paint.yend``` weren't called, because font sizing doesn't depend on end coordinates.
+Not only can the library make shapes, but text is supported too! Custom fonts are supported!
+The process of creating text involves styling the font node of the paint library Then define your font, and  font properties. ```paint.Text()```. Note that ```paint.xend``` and ```paint.yend``` weren't called, because font sizing doesn't depend on end coordinates.
 
 ```cpp
   // Adjust font
-  Font Montserrat;
-  Montserrat.name = "Montserrat"; // Assuming you have the Montserrat font pack installed otherwise default font used
-  Montserrat.size = 14;  // Adjust height of font
-  Montserrat.width = 700;
-  Montserrat.underline = TRUE; // DWORD from windows.h
-  Montserrat.italics = TRUE;
+  paint.font.name = "Montserrat"; // Assuming you have the Montserrat font pack installed otherwise default font used
+  paint.font.size = 14;  // Adjust height of font
+  paint.font.width = 700;
+  paint.font.underline = TRUE; // DWORD from windows.h
+  paint.font.italics = TRUE;
 
   // Adjust the text placement
   paint.x = 100;
