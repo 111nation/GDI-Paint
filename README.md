@@ -106,7 +106,7 @@ Reset the library and this time, creating a line involves manipulating the styli
 <h2>Creating some text!</h2>
 
 Not only can the library make shapes, but the text is supported too! Custom fonts are supported!
-The process of creating text involves making an instantiation of the font library that is included too. Then define your font,and  font properties, then call ```paint.Text()```
+The process of creating text involves making an instantiation of the font library that is included too. Then define your font,and  font properties, then call ```paint.Text()```. Note that ```paint.xend``` and ```paint.yend``` weren't called, because font sizing doesn't depend on end coordinates.
 
 ```cpp
   // Adjust font
@@ -118,4 +118,13 @@ The process of creating text involves making an instantiation of the font librar
   Montserrat.italics = TRUE;
 
   // Adjust the text placement
+  paint.x = 100;
+  paint.y = 200;
+
+  // Other non font styling
+  paint.color = RGB(255, 0, 0);
+  paint.border.width = 1;
+  paint.Text("Hey cool some text!"); // std::string
 ```
+
+Hope this helps a lot! Thank you for trying out the paint Library, every issue and contribution will help improve this library further! 
