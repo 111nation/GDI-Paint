@@ -70,7 +70,7 @@ You can even make the red square rounded!
 <h2>Creating a circle/ ellipse</h2>
 
 Repeat the process of assigning the <b>the device in context</b> of the window. This time use ```paint.Circle()```. Use ```paint.Reset()``` to reset most common styling to default.
-If the coordinates are not equal spaced a ellipse is formed.
+If the coordinates are not equal spaced an ellipse is formed.
 
 ```cpp
   paint.Reset();
