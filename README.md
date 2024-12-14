@@ -105,8 +105,8 @@ Reset the library and this time, creating a line involves manipulating the styli
 
 <h2>Creating some text!</h2>
 
-Not only can the library make shapes, but text is supported too! Custom fonts are supported!
-The process of creating text involves styling the font node of the paint library Then define your font, and  font properties. ```paint.Text()```. Note that ```paint.xend``` and ```paint.yend``` weren't called, because font sizing doesn't depend on end coordinates.
+Not only can the library make shapes, but text is supported too! Custom fonts are supported as well!
+The process of creating text involves styling the font node of the paint library. Define your font, and font properties. ```paint.Text()```. Note that ```paint.xend``` and ```paint.yend``` weren't accessed, because font sizing doesn't depend on end coordinates.
 
 ```cpp
   // Adjust font
