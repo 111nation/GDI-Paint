@@ -9,9 +9,9 @@ The paint wrapper is semi-inspired by CSS.
 - Ensure ```string``` header present.
 - Compile with `-lUser32 -lmsimg32 -windows` libraries to ensure full functionality.
 
-<h2>Documentation</h2>
+<h1>Documentation</h1>
 
-<h1>Creating a square/ rectangle</h1>
+<h2>Creating a square/ rectangle</h2>
 
 Let's create a simple rectangle. Assuming that you've already made a window that can be painted. Pass the window's <b>Device in context</b> or its `hDC` to `paint.area`. 
 Remember to clear the `paint.area` depending on how you assigned the `hDC`.
