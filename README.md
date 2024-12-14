@@ -4,7 +4,9 @@ The paint wrapper is semi-inspired by CSS.
 
 <h3>Required:</h3>
 
+- C++
 - Ensure you have the ``` window.h``` header present with your compiler.
+- Ensure ```string``` header present.
 - Compile with `-lUser32 -lmsimg32 -windows` libraries to ensure full functionality.
 
 <h2>Documentation</h2>
@@ -68,6 +70,7 @@ You can even make the red square rounded!
 <h2>Creating a circle/ ellipse</h2>
 
 Repeat the process of assigning the <b>the device in context</b> of the window. This time use ```paint.Circle()```. Use ```paint.Reset()``` to reset most common styling to default.
+If the coordinates are not equal a ellipse is formed.
 
 ```cpp
   paint.Reset();
@@ -88,8 +91,31 @@ Reset the library and this time, creating a line involves manipulating the styli
 ```cpp
   paint.Reset();
 
+  // Placement
+  paint.x = 150;
+  paint.xend = 205;
+  paint.y = 10;
+  paint.yend = 15;
+  // Styling
   paint.border.color = RGB(255, 255, 255);
   paint.border.width = 3;
-  paint.border.style = PS_DASH
+  paint.border.style = PS_DASH;
+  paint.Line();
 ```
 
+<h2>Creating some text!</h2>
+
+Not only can the library make shapes, but the text is supported too! Custom fonts are supported!
+The process of creating text involves making an instantiation of the font library that is included too. Then define your font,and  font properties, then call ```paint.Text()```
+
+```cpp
+  // Adjust font
+  Font Montserrat;
+  Montserrat.name = "Montserrat"; // Assuming you have the Montserrat font pack installed otherwise default font used
+  Montserrat.size = 14;  // Adjust height of font
+  Montserrat.width = 700;
+  Montserrat.underline = TRUE; // DWORD from windows.h
+  Montserrat.italics = TRUE;
+
+  // Adjust the text placement
+```
