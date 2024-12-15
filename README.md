@@ -5,7 +5,7 @@ The paint wrapper is semi-inspired by CSS.
 <h3>Required:</h3>
 
 - C++
-- Ensure you have the ``` window.h``` header present with your compiler.
+- Ensure you have the ``` windows.h``` header present with your compiler.
 - Ensure ```string``` header present.
 - Compile with `-lUser32 -lmsimg32 -windows` libraries to ensure full functionality.
 
